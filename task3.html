@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .button {
+            background-color: cadetblue;
+            width: 20%;
+            height: 60px;
+            display: inline-block;
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            position: relative;
+            display: inline;
+            padding: 50px;
+            margin-top: 50px;
+        }
+
+        .menubar {
+            display: none;
+            position:absolute;
+            background-color: brown;
+            min-width: 150px;
+            box-shadow: rgb(41, 159, 148);
+            z-index: 2px;
+        }
+
+        .menubar a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .menubar a:hover{
+            background-color: aqua;
+        }
+        .container:hover .menubar{
+            display: block;
+        }
+        .container:hover  .button{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <button class="button">Menu bar</button>
+        <div class="menubar">
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+
+        </div>
+    </div>
+</body>
+
+</html>
